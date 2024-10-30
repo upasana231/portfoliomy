@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #F9F9F9; /* Soft White */
+    font-family: "Playfair Display", serif;
+    animation: fadeIn 1s; /* Fade-in animation */
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #2C3E50; /* Deep Blue */
+    width: 20vw;
+    height: 100vh;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a {
+    color: #ECF0F1; /* Light Gray */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.sidebar nav li a:hover {
+    color: #FF6F61; /* Bright Coral */
+}
+
+.main {
+    background-color: #ECF0F1; /* Light Gray */
+    width: 80vw; /* Adjusted for proper layout */
+    height: 100vh;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    padding: 20px; /* Padding for the main content */
+}
+
+.infocontainer {
+    background-color: rgb(197, 187, 221);
+    height: 70vh; /* Set height for the infocontainer */
+    width: 90%; /* Full width of main container */
+    margin: 101px auto; /* Center the container */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between text and image */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.devinfo {
+    flex: 1; /* Use available space */
+    margin-right: 20px; /* Space between text and image */
+}
+
+.devpic {
+    flex: 0 0 231px; /* Fixed width for image */
+    display: flex; /* Center the image */
+    justify-content: center;
+    align-items: center;
+}
+
+.devpic img {
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 70vh; /* Max height for responsiveness */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.name h1 {
+    font-size: 3em; /* Large font size */
+    color: #FF6F61; /* Bright Coral color */
+    margin: 0; /* Remove default margin */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add subtle shadow for depth */
+}
+
+.moreabout {
+    font-size: 15px;
+    color: rgb(13, 41, 73);
+    line-height: 1.6; /* Spacing between lines */
+    /* background-color: #b79ad3fd; */
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.buttons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align buttons to the start */
+    margin-top: 20px; /* Space above the buttons */
+    padding: 23px 15px;
+    
+    
+}
+
+.btn {
+    padding: 3px 15px;
+    border-radius: 22px;
+    font-weight: inherit;
+    font-size: 12px;
+    margin: 0 3px;
+    cursor: pointer;
+    background-color: #1ABC9C; /* Bright Teal */
+    color: #FFF; /* White */
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: #16A085; /* Darker Teal */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+.projects {
+    padding: 40px 20px; /* Padding for the section */
+    background-color: #ECF0F1; /* Light Gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    margin: 20px 0; /* Space around the section */
+}
+
+.projects h2 {
+    text-align: center; /* Center the title */
+    color: #FF6F61; /* Heading color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column; /* Stack projects vertically */
+    gap: 15px; /* Space between projects */
+}
+
+.project-item {
+    background-color: #fff; /* White background for project items */
+    padding: 20px; /* Padding for project items */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.project-link {
+    color: #1ABC9C; /* Link color */
+    text-decoration: underline; /* Underline links */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+.project-link:hover {
+    color: #16A085; /* Darker Teal on hover */
+}
+
+.contactform {
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    max-width: 600px; /* Limit the width of the form */
+    margin: auto; /* Center the form */
+}
+
+.contactform h1 {
+    font-family: "Source Serif 4", serif; 
+    padding: 12px 0;
+    color: #FF6F61; /* Heading color */
+    text-align: center; /* Center the heading */
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input,
+.contactform form div textarea {
+    width: 100%; /* Full width inputs */
+    border-radius: 5px;
+    margin: 6px 0;
+    padding: 10px; /* Increased padding for comfort */
+    border: 1px solid #BDC3C7; /* Light border */
+    transition: border 0.3s ease; /* Smooth border transition */
+}
+
+.contactform form div input:focus,
+.contactform form div textarea:focus {
+    border: 1px solid #FF6F61; /* Change border color on focus */
+    outline: none; /* Remove outline */
+}
+
+.contactform button {
+    padding: 10px 20px; /* Increased padding */
+    border-radius: 22px;
+    font-weight: bold; /* Bold text */
+    font-size: 14px; /* Larger font size */
+    background-color: #1ABC9C; /* Button color */
+    color: #FFF; /* White text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contactform button:hover {
+    background-color: #16A085; /* Darker Teal */
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hello span {
+    color: #971e13;
+}
+.main>h2{
+    text-align: center;
+    color: #2C3E50;
+    margin: 20px;
+    font-size: 50px;
+}
+.resume-section h2{
+    font-size: 30px;
+    text-align: center;
+}
+.resume-section img{
+    max-width: 100%;
+    overflow: hidden;
+}
